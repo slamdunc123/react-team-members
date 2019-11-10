@@ -1,0 +1,24 @@
+{
+	"name": "react-team-members",
+	"version": "1.0.0",
+	"description": "SERVER",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js",
+		"server": "nodemon server.js",
+		"client": "npm start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"concurrently": "^5.0.0",
+		"express": "^4.17.1",
+		"mongoose": "^5.7.9"
+	},
+	"devDependencies": {
+		"nodemon": "^1.19.4"
+	}
+}
